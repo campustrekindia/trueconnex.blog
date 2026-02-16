@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueConnex | Community & Stories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Outfit"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            base: '#FFF0F5',
+                            primary: '#E11D48',
+                            secondary: '#DB2777',
+                            text: '#881337',
+                        }
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fce7f3 100%);
+            min-height: 100vh;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 40px rgba(225, 29, 72, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-text">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="https://trueconnex.in" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-rose-500 to-pink-500 flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <span class="text-2xl font-serif font-bold tracking-tight text-rose-900">TrueConnex</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://trueconnex.in" class="text-rose-800/70 hover:text-rose-600 font-medium transition-colors">Main Site</a>
+                    <a href="#" class="text-rose-600 font-bold transition-colors">Blog</a>
+                </div>
+                <a href="https://instagram.com/trueconnex" target="_blank" class="text-rose-600 hover:text-rose-800 transition-colors">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-32 pb-16 text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-serif text-rose-950 mb-4">The Connection Chronicles</h1>
+        <p class="text-rose-800/70 max-w-2xl mx-auto text-lg">
+            Stories about modern dating, safety, and the art of meeting offline.
+        </p>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Article 1 -->
+            <a href="blog_post.html" class="glass-card rounded-3xl overflow-hidden group block">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-rose-600 uppercase tracking-widest">
+                        Safety
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs text-rose-400 mb-2">March 10, 2025 • 4 min read</div>
+                    <h3 class="text-2xl font-serif font-bold text-rose-900 mb-3 group-hover:text-rose-600 transition-colors">Why "Verified" is the New Love Language</h3>
+                    <p class="text-rose-800/70 text-sm line-clamp-3">
+                        In an age of AI bots and catfishing, ID verification isn't just a feature—it's a necessity. Here is how TrueConnex ensures you're meeting a real person.
+                    </p>
+                    <div class="mt-6 flex items-center text-rose-600 font-bold text-sm">
+                        Read Story <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="blog_post.html" class="glass-card rounded-3xl overflow-hidden group block">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-rose-600 uppercase tracking-widest">
+                        Experiences
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs text-rose-400 mb-2">March 08, 2025 • 3 min read</div>
+                    <h3 class="text-2xl font-serif font-bold text-rose-900 mb-3 group-hover:text-rose-600 transition-colors">The Psychology of Sensory Dining</h3>
+                    <p class="text-rose-800/70 text-sm line-clamp-3">
+                        Why do we blindfold guests at dinner? Removing visual bias allows personality and chemistry to take center stage.
+                    </p>
+                    <div class="mt-6 flex items-center text-rose-600 font-bold text-sm">
+                        Read Story <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="blog_post.html" class="glass-card rounded-3xl overflow-hidden group block">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-rose-600 uppercase tracking-widest">
+                        Tips
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="text-xs text-rose-400 mb-2">March 05, 2025 • 5 min read</div>
+                    <h3 class="text-2xl font-serif font-bold text-rose-900 mb-3 group-hover:text-rose-600 transition-colors">5 Conversation Starters That Actually Work</h3>
+                    <p class="text-rose-800/70 text-sm line-clamp-3">
+                        Forget "What do you do?" Try these questions to spark genuine intrigue at our next Yacht Mixer.
+                    </p>
+                    <div class="mt-6 flex items-center text-rose-600 font-bold text-sm">
+                        Read Story <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Instagram CTA -->
+    <section class="py-16 bg-white/30 backdrop-blur-sm border-t border-rose-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i class="fa-brands fa-instagram text-5xl text-rose-500 mb-6"></i>
+            <h2 class="text-3xl font-serif text-rose-950 mb-4">Join the Conversation on Instagram</h2>
+            <p class="text-rose-800/70 mb-8">
+                We post daily dating tips, event teasers, and community polls. DM us your questions!
+            </p>
+            <a href="https://instagram.com/trueconnex" target="_blank" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-pink-500/40 transition-all transform hover:-translate-y-1">
+                Follow @trueconnex
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-rose-800/50 text-xs">
+        &copy; 2025 TrueConnex.
+    </footer>
+
+</body>
+</html>
