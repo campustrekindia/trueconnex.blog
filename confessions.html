@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueConnex | Confessions Box</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Outfit"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            base: '#FFF0F5',
+                            primary: '#E11D48',
+                            secondary: '#DB2777',
+                            text: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fce7f3 100%);
+            min-height: 100vh;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px 0 rgba(225, 29, 72, 0.05);
+        }
+        .confession-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid #ffe4e6;
+        }
+        .confession-card:hover {
+            transform: rotate(-1deg) scale(1.02);
+            box-shadow: 0 20px 40px rgba(225, 29, 72, 0.1);
+        }
+        .quote-mark {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #fecdd3;
+            font-family: serif;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-text">
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-rose-600 font-medium hover:text-rose-800 flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Community
+            </a>
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-rose-500 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-heart text-xs"></i>
+                </div>
+                <span class="font-serif font-bold text-xl text-rose-900">TrueConnex</span>
+            </div>
+            <a href="https://instagram.com/trueconnex" target="_blank" class="w-10 h-10 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 text-center px-4">
+        <div class="inline-block bg-rose-100 text-rose-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Anonymous & Raw</div>
+        <h1 class="text-5xl md:text-7xl font-serif text-rose-950 mb-4 italic">The Confession Box</h1>
+        <p class="text-rose-800/70 max-w-2xl mx-auto text-lg leading-relaxed">
+            Spill the tea. Share your missed connections, dating disasters, or secret sparks. 
+            We repost the best ones anonymously on our Instagram.
+        </p>
+        
+        <div class="mt-10">
+            <a href="mailto:confessions@trueconnex.in" class="bg-rose-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-rose-700 transition-all inline-flex items-center gap-3">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                Submit to confessions@trueconnex.in
+            </a>
+        </div>
+    </header>
+
+    <!-- Samples Section -->
+    <section class="max-w-6xl mx-auto px-4 pb-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="confession-card">
+                <span class="quote-mark">“</span>
+                <p class="text-rose-900 italic mb-6 leading-relaxed relative z-10">
+                    "Met a guy at the Mumbai Yacht Mixer who spent 20 minutes explaining why Pluto should still be a planet. I think I'm in love."
+                </p>
+                <div class="flex items-center justify-between text-[10px] uppercase font-bold tracking-widest text-rose-400 border-t border-rose-50 pt-4">
+                    <span>#MumbaiMixer</span>
+                    <span>2 days ago</span>
+                </div>
+            </div>
+
+            <div class="confession-card" style="transform: rotate(1deg);">
+                <span class="quote-mark">“</span>
+                <p class="text-rose-900 italic mb-6 leading-relaxed relative z-10">
+                    "To the girl in the red dress at the Bangalore Sensory Dinner: our conversation about 90s cartoons made my month. Hope we match."
+                </p>
+                <div class="flex items-center justify-between text-[10px] uppercase font-bold tracking-widest text-rose-400 border-t border-rose-50 pt-4">
+                    <span>#SensoryDinner</span>
+                    <span>Yesterday</span>
+                </div>
+            </div>
+
+            <div class="confession-card">
+                <span class="quote-mark">“</span>
+                <p class="text-rose-900 italic mb-6 leading-relaxed relative z-10">
+                    "Finally deleted Tinder today. TrueConnex actually verified my ID in 2 hours and the quality of the crowd is just different."
+                </p>
+                <div class="flex items-center justify-between text-[10px] uppercase font-bold tracking-widest text-rose-400 border-t border-rose-50 pt-4">
+                    <span>#IDVerified</span>
+                    <span>Just Now</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-20 glass-panel rounded-[3rem] p-10 text-center max-w-3xl mx-auto border-white/50">
+            <h2 class="text-3xl font-serif font-bold text-rose-950 mb-4">Want to see your story here?</h2>
+            <p class="text-rose-800/70 mb-8 text-sm md:text-base">
+                Send us your anonymous confession. No names, no handles, just the raw story.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:confessions@trueconnex.in" class="bg-white text-rose-600 border border-rose-200 px-6 py-3 rounded-xl font-bold hover:bg-rose-50 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Send Email
+                </a>
+                <a href="https://instagram.com/trueconnex" target="_blank" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                    Follow Reposts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white/30 backdrop-blur-sm border-t border-rose-100 text-center">
+        <div class="flex justify-center gap-6 mb-8 text-rose-600 text-sm">
+            <a href="https://trueconnex.in" class="hover:text-rose-900">Main Site</a>
+            <a href="index.html" class="hover:text-rose-900">Stories</a>
+            <a href="confessions.html" class="hover:text-rose-900 font-bold italic">Confessions</a>
+        </div>
+        <p class="text-rose-800/20 text-[10px] uppercase tracking-widest">&copy; 2025 TrueConnex. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
